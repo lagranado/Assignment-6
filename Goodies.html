@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Day Extravaganza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="banner.png" alt="Banner of Earth Day Extravaganza with a person and alien" class="header_banner">
+        <h1>Earth Day Extravaganza Store</h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#event-info">Events</a></li>
+            <li><a href="#registration">Register for Updates!</a></li>
+            <li><a href="Goodies.html">Goodies</a></li>
+          </ul>
+        </nav>
+        <select id="languageSelect" onchange="changeLanguage()">
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+        </select>
+    </header>
+
+    <img src="Merch poster.png" alt="Merch Poster" class="merch">
+    
+    <div id="products">
+      <h2>Please Enjoy some Goodies!</h2>
+      <p>These sales allows us to continue to connect and host everyone in preparation for the event.</p>
+        <div class="product">
+          <h3>Eco-Friendly T-Shirt - Love Your Mother Earth</h3>
+          <p>$20.00</p>
+          <label for="size">Size:</label>
+          <select id="size">
+            <option value="xs">XS</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xl">XL</option>
+          </select>
+          <button onclick="addToCart('Eco-Friendly T-Shirt - Love Your Mother Earth', '20')">Add to Cart</button>
+
+          <h3>Stainless Steel Water Bottle - Earth Prints</h3>
+          <p>$20.00</p>
+          <button onclick="addToCart('Stainless Steel Water Bottle - Earth Prints', '20')">Add to Cart</button>
+
+          <h3>Biodegradable Plantable Seed Paper Greeting Cards</h3>
+          <p>$10.00</p>
+          <button onclick="addToCart('Biodegradable Plantable Seed Paper Greeting Cards', '10')">Add to Cart</button>
+          
+          <h3>Eco-Friendly Bamboo Toothbrushes with Earth Day</h3>
+          <p>$10.00</p>
+          <button onclick="addToCart('Eco-Friendly Bamboo Toothbrushe', '10')">Add to Cart</button>
+
+          <h3> Solar-Powered LED Outdoor Lights for sustainable lighting solutions</h3>
+          <p>$25.00</p>
+          <button onclick="addToCart('Solar-Powered LED Outdoor Lights', '25')">Add to Cart</button>
+
+          <h3>Futuristic Anti-Gravity Backpacks designed with alien technology for effortless carrying</h3>
+          <p>$55.00</p>
+          <button onclick="addToCart('Anti-Gravity Backpack', '55')">Add to Cart</button>
+
+          <h3>Intergalactic Communication Devices for connecting with alien civilizations</h3>
+          <p>$100.00</p>
+          <button onclick="addToCart('Intergalactic Communication Device', '100')">Add to Cart</button>
+        </div>
+        <!-- Add more products here -->      
+    </div>
+
+    <h2>Donation</h2>
+    <input type="number" id="donation" placeholder="Enter donation amount" />
+    <button onclick="addDonation()">Add Donation</button>
+
+    <div id="fixedCart" class="fixed-cart">
+        <!-- This will be populated by JavaScript -->
+    </div>
+
+    <h2>Cart</h2>
+    <div id="cart">
+        <p>No items in cart.</p>
+    </div>
+
+    <h2>Total</h2>
+    <div id="total">
+        <p>Total Price: $0</p>
+        <p>Shipping: $5.00</p>
+        <p>Grand Total: $5.00</p>
+    </div>
+
+    <footer>
+      <a href="https://www.reddit.com" class="social-media-button" aria-label="Reddit"> 
+        <img src="reddit-logo-2436.svg" alt="Reddit">
+      </a> 
+      <a href="https://www.facebook.com" class="social-media-button" aria-label="Facebook">
+        <img src="Facebook_f_logo.svg" alt="Facebook">
+      </a>
+      <a href="https://www.twitter.com" class="social-media-button" aria-label="Twitter">
+          <img src="X_logo_2023.svg" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com" class="social-media-button" aria-label="Instagram"> 
+        <img src="Instagram_logo_2016.svg" alt="Instagram">
+      </a>  
+      <p>Contact us at <a href="mailto:contact@earthdayextravaganza.com">contact@earthdayextravaganza.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

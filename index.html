@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Day Extravaganza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="banner.png" alt="Banner of Earth Day Extravaganza with a person and alien" class="header_banner">
+        <h1>Welcome to the Earth Day Extravaganza!</h1>
+        <p>Join us as we welcome our intergalactic visitors!</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#event-info">Events</a></li>
+            <li><a href="#registration">Register for Updates!</a></li>
+            <li><a href="Goodies.html">Goodies</a></li>
+          </ul>
+        </nav>
+        <select id="languageSelect" onchange="changeLanguage()">
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+        </select>
+    </header>
+    
+    <section id="event-info">
+        <h2>Event Details</h2>
+        <p>Date: April 22, Every Year!</p>
+        <p>Time: All day</p>
+        <p>Location: Worldwide and Virtual</p>
+
+
+    </section>
+
+    <section id="registration">
+        <h2>Register Now</h2>
+        <form id="regForm" action="register.php" method="post">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+      <a href="https://www.reddit.com" class="social-media-button" aria-label="Reddit"> 
+        <img src="reddit-logo-2436.svg" alt="Reddit">
+      </a> 
+      <a href="https://www.facebook.com" class="social-media-button" aria-label="Facebook">
+        <img src="Facebook_f_logo.svg" alt="Facebook">
+      </a>
+      <a href="https://www.twitter.com" class="social-media-button" aria-label="Twitter">
+          <img src="X_logo_2023.svg" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com" class="social-media-button" aria-label="Instagram"> 
+        <img src="Instagram_logo_2016.svg" alt="Instagram">
+      </a>  
+      <p>Contact us at <a href="mailto:contact@earthdayextravaganza.com">contact@earthdayextravaganza.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
